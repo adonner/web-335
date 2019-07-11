@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>50</y>
+      <w>210</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>_Customer_
+--
+_id
+first_name
+last_name
+date_of_birth
+user_name</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>440</x>
+      <y>50</y>
+      <w>210</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>_Invoice_
+--
+_id
+date_created
+date_shipped
+subtotal
+tax
+total</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>440</x>
+      <y>340</y>
+      <w>210</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>_Line item_
+--
+_id
+name
+price
+quantity</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>210</x>
+      <y>100</y>
+      <w>250</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;230.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>240</x>
+      <y>80</y>
+      <w>100</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>1
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>410</x>
+      <y>80</y>
+      <w>100</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>*
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>510</x>
+      <y>170</y>
+      <w>100</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>1
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>510</x>
+      <y>300</y>
+      <w>100</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>*
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>290</x>
+      <y>0</y>
+      <w>100</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>ORD
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>210</y>
+      <w>350</w>
+      <h>490</h>
+    </coordinates>
+    <panel_attributes>_NoSQL Data Structure_
+--
+ 
+ //Customer data
+{
+  "_id": "1125ABe56C",
+  "first_name": "Steve",
+  "last_name": "Jobs",
+  "date_of_birth": "February 24, 1955",
+  "user_name": "sjobs",
+    // invoice array, can contain multiple invoices
+    "invoice": [
+      {
+        "_id": "35689d",
+        "date_created": "January 19, 2008",
+        "date_shipped": "January 22, 2008",
+        "subtotal": "200.00",
+        "tax": "7",
+        "total": "2007.00",
+        // Line Items can contain multiple line items
+        "line_items": [
+          {
+            "_id": "77239",
+            "name": "iPhone",
+            "price": "200.00",
+            "quantity": "1"
+          }
+        ]
+      }
+    ]
+}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>530</x>
+      <y>160</y>
+      <w>30</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;180.0</additional_attributes>
+  </element>
+</diagram>
