@@ -131,9 +131,9 @@ author_email
     <panel_attributes>_Business Rules_
 bg=white
 A publisher has one address
-Each publisher can publisher more than one books
-Each book has one Title ISBN and one Price
-Each book can have more than on authors
+Each publisher can publish more than one book
+Each book has one Title, ISBN, and Price
+Each book can have more than one author
 Each Author can have more than one contact information</panel_attributes>
     <additional_attributes/>
   </element>

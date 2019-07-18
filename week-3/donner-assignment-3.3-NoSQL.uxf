@@ -141,9 +141,9 @@
       <w>490</w>
       <h>530</h>
     </coordinates>
-    <panel_attributes>Business Rules
+    <panel_attributes>_NoSQL Data Structure_
 bg=white
-A publisher has one address
+
 {
   // publisher information
   "_id": "128479404",
