@@ -9,34 +9,9 @@
       <w>210</w>
       <h>70</h>
     </coordinates>
-    <panel_attributes>Publisher
+    <panel_attributes>User
 --
-publisher_name
-publisher_code</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>200</x>
-      <y>130</y>
-      <w>150</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes/>
-    <additional_attributes>130.0;20.0;10.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>330</x>
-      <y>120</y>
-      <w>210</w>
-      <h>90</h>
-    </coordinates>
-    <panel_attributes>Publisher Address
---
-publisher_address</panel_attributes>
+</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -47,11 +22,9 @@ publisher_address</panel_attributes>
       <w>210</w>
       <h>90</h>
     </coordinates>
-    <panel_attributes>Book
+    <panel_attributes>LINK_USER_ROLE
 --
-book_name
-book_isbn
-book_price
+
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -74,10 +47,9 @@ book_price
       <w>210</w>
       <h>90</h>
     </coordinates>
-    <panel_attributes>Author
+    <panel_attributes>ROLE
 --
-first_name
-last_name
+
 
 </panel_attributes>
     <additional_attributes/>
@@ -101,10 +73,9 @@ last_name
       <w>210</w>
       <h>90</h>
     </coordinates>
-    <panel_attributes>Contact Information
+    <panel_attributes>LINK_ROLE_PERMISSION
 --
-author_phone
-author_email
+
 
 </panel_attributes>
     <additional_attributes/>
@@ -128,25 +99,12 @@ author_email
       <w>490</w>
       <h>400</h>
     </coordinates>
-    <panel_attributes>Business Rules
+    <panel_attributes>_Business Rules_
 bg=white
-A publisher has one address.
-Each publisher publish one or more books.
-Each book has one title ISBN and price.
-Each book can have more than one author.
-Each author can have more than one contact information.</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Text</id>
-    <coordinates>
-      <x>210</x>
-      <y>120</y>
-      <w>50</w>
-      <h>30</h>
-    </coordinates>
-    <panel_attributes>1.1
-style=wordwrap</panel_attributes>
+Each User can have more than one Role.
+Each Role can be assigned to more than one User
+Each Role can have more than one Permission
+Each Permission can be assigned to more than one Role</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -169,7 +127,7 @@ style=wordwrap</panel_attributes>
       <w>50</w>
       <h>30</h>
     </coordinates>
-    <panel_attributes>1.1
+    <panel_attributes>1.*
 style=wordwrap</panel_attributes>
     <additional_attributes/>
   </element>
@@ -181,7 +139,7 @@ style=wordwrap</panel_attributes>
       <w>50</w>
       <h>30</h>
     </coordinates>
-    <panel_attributes>1.*
+    <panel_attributes>1.1
 style=wordwrap</panel_attributes>
     <additional_attributes/>
   </element>
@@ -212,24 +170,62 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Text</id>
     <coordinates>
-      <x>290</x>
-      <y>120</y>
-      <w>50</w>
-      <h>20</h>
-    </coordinates>
-    <panel_attributes>1.1
-style=wordwrap</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Text</id>
-    <coordinates>
       <x>110</x>
       <y>260</y>
       <w>50</w>
       <h>30</h>
     </coordinates>
     <panel_attributes>1.*
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>440</y>
+      <w>210</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>PERMISSION
+--
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>210</x>
+      <y>470</y>
+      <w>140</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>120.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>300</x>
+      <y>460</y>
+      <w>50</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>1.*
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>220</x>
+      <y>460</y>
+      <w>50</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>1.1
 style=wordwrap</panel_attributes>
     <additional_attributes/>
   </element>
